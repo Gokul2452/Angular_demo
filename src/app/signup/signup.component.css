@@ -1,0 +1,32 @@
+.box{
+  height: 500px;
+  width: 620px;
+  margin:45px 0px 0px 390px ;
+  padding-top: 35px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe,
+           -20px -20px 60px #ffffff;
+}
+#floatingInput,#floatingPassword,#select,#floatfile{
+  width: 300px;
+  margin-left: 160px;
+  height: 55px;
+}
+
+#float_labelforemail,#float_labelforpassword,#floatforfile {
+  margin-left: 160px;
+}
+#btnregister{
+  background-color: rgb(124, 201, 117);
+  margin: 40px 0px 0px 260px;
+  color: black;
+}
+#spanusername,#spanemail,#spanconfirmpass{
+  margin-left: 210px;
+  color: red;
+}
+#btnregister:disabled{
+  cursor: no-drop;
+  pointer-events: all ! important;
+}

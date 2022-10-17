@@ -1,0 +1,24 @@
+.box{
+    height: 250px;
+    width: 300px;
+    border: solid rgb(92, 87, 87);
+   margin-left: 550px;
+   margin-top: 200px;
+}
+
+#h4{
+   margin-left: 140px;
+   color: darkred;
+}
+#input_box
+{
+   margin-left: 60px;
+}
+#ser{
+   margin-left: 120px;
+}
+.table_container{
+   height:400px;
+   width: 300px;
+   border: solid;
+}

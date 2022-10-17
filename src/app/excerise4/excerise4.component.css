@@ -1,0 +1,15 @@
+.box{
+    height: 300px;
+    width: 600px;
+    border: solid rgb(92, 87, 87);
+    margin:200px 0px 0px 400px ;
+}
+#tb{
+    width: 500px;
+    height: 200px;
+    margin-left: 45px;
+}
+tr,th{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

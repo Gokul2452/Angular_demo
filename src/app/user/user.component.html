@@ -1,0 +1,56 @@
+
+
+<h4 style="color: rgb(41, 235, 15);font-size: 15px;" align = "center">Child Component</h4>
+
+<h4 align = "center">Msg from parent :{{msgfromparent}}</h4>
+<table border="1px"  style="border-collapse: collapse;" id="table">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Sex</th>
+    </tr>
+    <tr *ngFor="let obj of persons">
+        <td>{{obj.name}}</td>
+        <td>{{obj.age}}</td>
+        <td>{{obj.sex}}</td>
+    </tr>
+</table>
+<br><br>
+
+<button id="btnsend" (click)="sendToParent()">Send</button> 
+<br> <br>
+<button id="btnrandom" (click)="random()">random</button> <br>
+
+
+
+<!-- <input type="radio" name="gender" (click)="eventCheck($event)" id="" value="Male">Male <br>
+<input type="radio" name="gender" (click)="eventCheck($event)" id="" value="Female">Female<br> -->
+<!-- <table border="1" id="tableforgender">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Sex</th>
+    </tr>
+    <tr *ngFor="let obj of persons">
+        <i *ngIf=" this.gender_Event == obj.sex">
+            <td>{{obj.name}}</td>
+            <td>{{obj.age}}</td>
+            <td>{{obj.sex}}</td>
+        </i>
+    </tr>
+    
+</table> -->
+<!-- 
+<input type="text" name="" id="" [(ngModel)='search'>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Sex</th>
+        </tr>
+        <tr *ngFor="let obj of persons | revpipe:search ">
+                <td>{{obj.name}}</td>
+                <td>{{obj.age}}</td>
+                <td>{{obj.sex}}</td>
+        </tr>
+    </table> -->

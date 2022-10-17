@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <form [formGroup]="rform" (ngSubmit)="onsubmit()">
+    <div class="box">
+      <h4 align="center">Sign-Up</h4>
+      <div class="form-floating mb-3" id="form-floating ">
+        <input type="text" class="form-control" id="floatingInput"  formControlName="user"
+          placeholder="name@example.com">
+        <label for="floatingInput" id="float_labelforemail">Username</label>
+        <span id="spanemail" *ngIf="rform.get('user').invalid && rform.get('user').touched">
+          Username Must in 6 leters
+        </span>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingPassword" formControlName="email" placeholder="Password">
+        <label for="floatingPassword" id="float_labelforpassword">Email</label>
+        <span id="spanemail" *ngIf="rform.get('email').invalid && rform.get('email').touched">
+          Pls Enter Proper Mailid
+        </span>
+      </div> <br>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" formControlName="password"
+          placeholder="Password">
+        <label for="floatingPassword" id="float_labelforpassword">Password</label>
+      </div> <br>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" formControlName="confirmpass"
+          placeholder="Password">
+        <label for="floatingPassword" id="float_labelforpassword">Re-Enter Your Password</label>
+        <span id="spanconfirmpass"
+          *ngIf=" rform.get('confirmpass').touched && ( rform.get('password').value != rform.get('confirmpass').value)">
+          Password Doesnot Match
+        </span>
+      </div> <br>
+      <div class="form-floating">
+        <input type="date" class="form-control" id="floatingPassword" formControlName="Dob" placeholder="Dob">
+        <label for="floatingPassword" id="float_labelforpassword">Date Of Birth</label>
+      </div> <br>
+
+      <!-- <select id="select" class="form-select form-select-sm" formControlName="education" size="1"
+        aria-label=".form-select-sm example">
+        <option value="PHD">PhD</option>
+        <option value="BCA">BCA</option>
+        <option value="Mca">MCA</option>
+      </select> <br> -->
+      <div class="form-group">
+        <label for="exampleFormControlFile1" id="floatforfile">Choose Your Photo</label> <br>
+        <input type="file" (change)="showPreview($event)" class="form-control-file" id="exampleFormControlFile1"
+          formControlName="pic">
+      </div>
+      <button class="btn btn-success" id="btnregister">Register</button>
+      <button class="btn btn-success" id="btnreset" (click)="reset()">Reset</button>
+    </div>
+    <div class="displaythecontent" [ngStyle]="{'visibility': isvisible ?'visible':'hidden'}">
+      <h4 id="h4fordetails" align="center">Details</h4>
+      <div class="content">
+        <table>
+          <tr>
+            <th>username : </th>
+            <td>{{username}}</td>
+          </tr>
+          <tr>
+            <th>Email : </th>
+            <td>{{email}}</td>
+          </tr>
+          <tr>
+            <th>Password : </th>
+            <td>{{password}}</td>
+          </tr>
+          <tr>
+            <th>DOB : </th>
+            <td>{{Dob}}</td>
+          </tr>
+          <tr>
+              <th>Image :<img [src]="imageURL" id="imgfordeatils" [alt]="rform.value.name" height="150" width="100"></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </form>
+</body>
+</html>

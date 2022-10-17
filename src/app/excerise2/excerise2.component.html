@@ -1,0 +1,55 @@
+
+<!-- {{second_msg}} -->
+<div class="box">
+    <h4 [align]="align">Excerise_7</h4>
+    <input type="number" name="" id="search_textbox" [(ngModel)]="search_menu" placeholder="Enter the user_id">
+   
+    <!-- <div class="list_display" *ngIf="search_menu == 0 ">
+        <ul>
+            <li>Mark</li>
+            <li>Attedance</li>
+            <li>Report</li>
+            <li>setting</li>
+        </ul>
+    </div> -->
+    <div class="list_display" *ngIf="search_menu == 1">
+        <ul>
+            <li>Mark</li>
+            <li>Attedance</li>
+        </ul>
+    </div>
+    <div class="list_display" *ngIf="search_menu == 2">
+        <ul>
+            <li>Mark</li>
+            <li>Attedance</li>
+            <li>Report</li>
+        </ul>
+    </div>
+    <div class="list_display" *ngIf="search_menu == 3">
+        <ul>
+            <li>Mark</li>
+            <li>Attedance</li>
+            <li>Report</li>
+            <li>setting</li>
+        </ul>
+    </div>
+</div>
+
+<form #myForm="ngForm" (ngSubmit)="onSumbit(myForm)" novalidate>
+    <input name ="name" ngModel required #name="ngModel">
+    <input name="email" ngModel required #email="ngModel">
+   <br/>
+   <button>Submit</button>
+   <button type="button" (click)="resetFormValue(myForm)">Reset</button>
+   <button type="button" (click)="setDefault(myForm)">Set Default Value</button>
+</form>
+  
+<p>Name Field Value: {{ name.value }}</p>
+<p>Name Field Is Valid?: {{ name.valid }}</p>
+   
+<p>Email Field Value: {{ email.value }}</p>
+<p>Email Field is Valid?: {{ email.valid }}</p>
+  
+<p>Form value: {{ myForm.value | json }}</p>
+<p>Form valid: {{ myForm.valid }}</p>
+

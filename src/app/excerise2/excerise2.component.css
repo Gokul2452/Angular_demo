@@ -1,0 +1,13 @@
+.box{
+    height: 250px;
+    width: 300px;
+    border: solid rgb(92, 87, 87);
+    margin:200px 0px 0px 550px ;
+}
+#search_textbox{
+    margin-left: 60px;
+}
+.list_display{
+    margin-left: 80px;
+    margin-top: 30px;
+}

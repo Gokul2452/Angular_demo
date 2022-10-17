@@ -1,0 +1,22 @@
+<div class="box">
+    <h4 align="center">Ex_9 [ Time Table ]</h4>
+    <table id="tb" border="1px" style="border-collapse:collapse">
+        <tr>
+            <th>Day</th>
+            <th>Period_1</th>
+            <th>Period_2</th>
+            <th>Period_3</th>
+            <th>Period_4</th>
+            <th>Period_5</th>
+        </tr>
+        <tr *ngFor="let obj of timetable">
+            <th> {{obj.day}}</th>
+            <td style="color: red;">{{obj.period_1}}</td>
+            <td style="color:tomato">{{obj.period_2}}</td>
+            <td style="color:seagreen">{{obj.period_3}}</td>
+            <td style="color:darkmagenta">{{obj.period_4}}</td>
+            <td style="color:blue">{{obj.period_5}}</td>
+        </tr>
+        
+    </table>
+</div>

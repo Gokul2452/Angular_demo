@@ -1,0 +1,19 @@
+.box{
+    height: 300px;
+    width: 600px;
+    border: solid rgb(92, 87, 87);
+    margin:200px 0px 0px 400px ;
+}
+#tab{
+    margin-left: 45px;
+    width: 500px;
+    height: 200px;
+}
+th,td{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+tr:hover{
+    background-color: rgb(206, 198, 198);
+    transition: 0.3s;
+}

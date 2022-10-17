@@ -1,0 +1,17 @@
+ #btnsend{
+    margin-left: 180px;
+} 
+#btnrandom{
+    margin-left: 175px;
+}
+#table{
+    width: 220px;
+    height: 150px;
+    margin-left: 90px;
+}
+tr,td{
+    text-align: center;
+}
+#tableforgender{
+    margin-left: 90px;
+}

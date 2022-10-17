@@ -1,0 +1,17 @@
+<div class="box">
+    <h2 align = 'center'>Quiz Competiton</h2>
+    <div class="innercontainer">
+    <p>What is your name ?</p>
+    <input type="radio" (click)="q1($event)" name="q1" id="" value="Gokul">Gokul <br>
+    <input type="radio" name="q1" (click)="q1($event)" id="" value="Dhoni">Dhoni  <br>
+
+    <p>What is your hobby ?</p>
+    <input type="radio" name="q2" (click)="q2($event)" id="" value="Studying" required>Studying<br>
+    <input type="radio" name="q2" (click)="q2($event)" id="" value="Both">Both<br> <br>
+    
+    <button (click)="quizSubmit()">Submit</button>
+    <h4>score: {{quiz_result}}</h4>
+    <h4> {{grade_msg}}</h4> 
+    <button (click)="reload()">Restart </button>
+</div>
+</div>

@@ -1,0 +1,23 @@
+<div class="box">
+    <h4 [align]="center">Excerise_8</h4>
+    <table id="tab" style="border-collapse:collapse" border="1px">
+    <tr>
+        <th>Name</th>
+        <th>Rollno</th>
+        <th>Mark_1</th>
+        <th>Mark_2</th>
+        <th>Mark_3</th>
+        <th>Total</th>
+    </tr>
+    <tr *ngFor="let stud of student" [ngStyle]="{'color':stud.total > 280 ? 'Green':stud.total < 250 ? 'Red':'blue'}">
+        <td>{{stud.name}}</td>
+        <td>{{stud.rollno}}</td>
+        <td>{{stud.mark1}}</td>
+        <td>{{stud.mark2}}</td>
+        <td>{{stud.mark3}}</td>
+        <td>{{stud.total}}</td>
+    </tr>
+    </table>
+    
+</div>
+

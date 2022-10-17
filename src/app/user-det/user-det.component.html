@@ -1,0 +1,18 @@
+
+<div class="conatinerforuserdet">
+    <h4 style="color: rgb(41, 235, 15);font-size: 15px;" align = "center" >Parent Component</h4>
+
+    <h4 align = center>Msg form child : {{msgfromchild}}</h4> <br>
+    <h4 align = center> Random number form child : {{ random }} </h4>
+
+
+    <!-- {{revnum | revpipe}} -->
+
+
+</div>
+<div class="containerforuser">
+    <app-user [msgfromparent] = "Msgtochild" [persons]="persons" (Sendtoparent)="recieve($event)" (randomtoparent) = "recieveRandom($event)"></app-user>
+</div>
+
+
+

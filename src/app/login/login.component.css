@@ -1,0 +1,82 @@
+.box{
+    height: 700px;
+    width: 620px;
+    margin:45px 0px 0px 450px ;
+    padding-top: 35px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+#email{
+    padding-left: 190px ;
+    margin-right: 50px;
+}
+
+#floatingInput,#floatingPassword,#select,#floatfile{
+    width: 300px;
+    margin-left: 160px;
+    height: 55px;
+}
+
+#float_labelforemail,#float_labelforpassword,#floatforfile {
+    margin-left: 160px;
+}
+h4{
+    margin-bottom: 40px;
+}
+#btnregister{
+    background-color: rgb(124, 201, 117);
+    margin: 40px 0px 0px 200px;
+    cursor:pointer;
+    color: black;
+}
+#btnreset{
+  background-color: rgb(124, 201, 117);
+  margin: 40px 0px 0px 70px;
+  cursor:pointer;
+
+  color: black;
+}
+.signup_link{
+    margin-left: 210px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+
+    color:rgb(97, 197, 88) ;
+    font-weight:bold;
+}
+
+#spanusername,#spanemail,#spanconfirmpass{
+    margin-left: 210px;
+    color: red;
+}
+.displaythecontent{
+  height: 409px;
+  width: 365px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border-radius: 30px;
+  margin: -532px 0px 0px 32px;
+}
+.content {
+  margin-left: 50px;
+}
+#h4fordetails {
+padding-top: 26px;
+}
+#flexRadioDefault1{
+  margin-left: 130px;
+}
+#idforradio{
+  margin-left: 10px;
+}
+#exampleFormControlFile1{
+  margin-left: 160px;
+    margin-block-start: 12px;
+}
+#imgfordeatils{
+  margin-left: 45px;
+  margin-top: 12px;
+}
